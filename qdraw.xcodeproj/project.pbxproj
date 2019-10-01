@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F74751F7233F7E64003FF326 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74751F6233F7E63003FF326 /* Alamofire.framework */; };
+		F74751F8233F7E64003FF326 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F74751F6233F7E63003FF326 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7F0A800233EF8E100FBC780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0A7FF233EF8E100FBC780 /* AppDelegate.swift */; };
 		F7F0A802233EF8E100FBC780 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0A801233EF8E100FBC780 /* SceneDelegate.swift */; };
 		F7F0A804233EF8E100FBC780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0A803233EF8E100FBC780 /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		F7F0A80C233EF8E200FBC780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F0A80A233EF8E200FBC780 /* LaunchScreen.storyboard */; };
 		F7F0A817233EF8E200FBC780 /* qdrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0A816233EF8E200FBC780 /* qdrawTests.swift */; };
 		F7F0A822233EF8E200FBC780 /* qdrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0A821233EF8E200FBC780 /* qdrawUITests.swift */; };
+		F7F0A830233EF98F00FBC780 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0A82F233EF98F00FBC780 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F74751F9233F7E64003FF326 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F74751F8233F7E64003FF326 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F74751F6233F7E63003FF326 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F7F0A7FC233EF8E100FBC780 /* qdraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qdraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F0A7FF233EF8E100FBC780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F0A801233EF8E100FBC780 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,7 @@
 		F7F0A81D233EF8E200FBC780 /* qdrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qdrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F0A821233EF8E200FBC780 /* qdrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qdrawUITests.swift; sourceTree = "<group>"; };
 		F7F0A823233EF8E200FBC780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F0A82F233EF98F00FBC780 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74751F7233F7E64003FF326 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F74751F5233F7E63003FF326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74751F6233F7E63003FF326 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7F0A7F3233EF8E100FBC780 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,7 @@
 				F7F0A815233EF8E200FBC780 /* qdrawTests */,
 				F7F0A820233EF8E200FBC780 /* qdrawUITests */,
 				F7F0A7FD233EF8E100FBC780 /* Products */,
+				F74751F5233F7E63003FF326 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +135,7 @@
 				F7F0A808233EF8E200FBC780 /* Assets.xcassets */,
 				F7F0A80A233EF8E200FBC780 /* LaunchScreen.storyboard */,
 				F7F0A80D233EF8E200FBC780 /* Info.plist */,
+				F7F0A82F233EF98F00FBC780 /* CanvasView.swift */,
 			);
 			path = qdraw;
 			sourceTree = "<group>";
@@ -138,6 +168,8 @@
 				F7F0A7F8233EF8E100FBC780 /* Sources */,
 				F7F0A7F9233EF8E100FBC780 /* Frameworks */,
 				F7F0A7FA233EF8E100FBC780 /* Resources */,
+				F74751F9233F7E64003FF326 /* Embed Frameworks */,
+				F74751FA233F7E81003FF326 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,6 +286,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F74751FA233F7E81003FF326 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7F0A7F8233EF8E100FBC780 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +314,7 @@
 			files = (
 				F7F0A804233EF8E100FBC780 /* ViewController.swift in Sources */,
 				F7F0A800233EF8E100FBC780 /* AppDelegate.swift in Sources */,
+				F7F0A830233EF98F00FBC780 /* CanvasView.swift in Sources */,
 				F7F0A802233EF8E100FBC780 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +490,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63PRR8V9KN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = qdraw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.masaemon.qdraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -454,7 +513,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63PRR8V9KN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = qdraw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.masaemon.qdraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
